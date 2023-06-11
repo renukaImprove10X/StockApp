@@ -23,7 +23,7 @@ class CompanyListingsParser @Inject constructor() : CSVParser<CompanyListing> {
                     CompanyListing(
                         name = name ?: return@mapNotNull null,
                         symbol = symbol ?: return@mapNotNull null,
-                        exchange = exchange ?: return@mapNotNull null,
+                        exchange = exchange ?: return@mapNotNull null
                     )
                 }
                 .also {
